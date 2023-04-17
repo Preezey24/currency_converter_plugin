@@ -8,4 +8,3 @@ def fetch_exchange_rates(base_currency, api_key):
         return data['rates']
     except requests.exceptions.RequestException as e:
         print(f'Error fetching exchange rates: {e}')
-        return None
